@@ -63,7 +63,7 @@ public class ShoppingCartManualTest {
 
         // Test 5 : ใช้คูปองส่วนลด BULK ซื้อ 6 ชิ้นขึ้นไป
         ArrayList<CartItem> BULKCart = new ArrayList<>();
-        BULKCart.add(new CartItem("BULK", "Pen",10.0, 10)); // 90
+        BULKCart.add(new CartItem("BULK", "mask",10.0, 10)); // 90
         double total5 = ShoppingCartCalculator.calculateTotalPrice(BULKCart);
         if (total5 == 90.0) {
             System.out.println("PASSED: BULK cart total is correct (90.0)");
